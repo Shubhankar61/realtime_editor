@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom colorful background and text styles */
+body {
+  background: linear-gradient(90deg, #1e293b, #334155, #475569);
+  min-height: 100vh;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  color: #fbbf24; /* amber-400 */
+  text-shadow: 0 0 5px rgba(251, 191, 36, 0.7);
+}
+
+p {
+  color: #fcd34d; /* amber-300 */
+}
+
+.prose {
+  background-color: rgba(31, 41, 55, 0.85); /* gray-800 with opacity */
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+  color: #f9fafb; /* gray-50 */
+}
