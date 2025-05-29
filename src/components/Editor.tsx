@@ -6,12 +6,13 @@ import StarterKit from '@tiptap/starter-kit'
 import { io } from 'socket.io-client'
 import { useUser } from '../hooks/useUser'
 import { getUserColor } from '../utils/color'
+import type { Content } from '@tiptap/core'
 
 const socket = io('http://localhost:4000')
 
 interface UserEdit {
   username: string
-  content: any
+  content: Content
 }
 
 export default function Editor() {
